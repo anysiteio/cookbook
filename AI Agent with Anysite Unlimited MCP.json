@@ -1,0 +1,134 @@
+{
+  "name": "AI Agent with Anysite Unlimited MCP",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        0,
+        0
+      ],
+      "id": "a5d6060f-b23d-4bf6-bed8-db619c36db89",
+      "name": "When chat message received",
+      "webhookId": "64ea087d-a9bd-4b9c-897c-d9d90c8b211a"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        224,
+        0
+      ],
+      "id": "f0c1119e-02f1-4e23-9ba6-4a2e6814350d",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "endpointUrl": "https://mcp.anysite.io/mcp?api_key=",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.2,
+      "position": [
+        368,
+        224
+      ],
+      "id": "d6f469cc-0cb1-480c-93fa-f43491bc4273",
+      "name": "MCP Client"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        224,
+        224
+      ],
+      "id": "ab7e40d9-52a3-45d7-a975-7d063705ae4f",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "DzKhX3E7SSLddnv4",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# n8n AI Agent + AnySite MCP\n\n> Connect your AI agent to 68 tools for extracting data from LinkedIn, Instagram, Twitter, Reddit, YouTube, SEC, and more\n\n## What You Get\n\n- AI agent with access to 68 data extraction tools\n- Unlimited requests for $30/month\n- Simple chat interface for research\n\n---\n\n## Setup\n\n### 1. AnySite\n\n1. Sign up at [anysite.io](https://anysite.io)\n2. Subscribe to **MCP Unlimited** ($30/mo) at [app.anysite.io](https://app.anysite.io)\n3. Go to **MCP Server Integration** section\n4. Copy your **Direct URL**:\n   ```\n   https://mcp.anysite.io/mcp?api_key=YOUR_API_KEY\n   ```\n\n### 2. OpenAI\n\n1. Get API key at [platform.openai.com](https://platform.openai.com)\n2. In n8n, create an **OpenAI API** credential\n\n### 3. n8n\n\n1. Import the workflow from JSON file\n2. Configure credentials:\n\n| Node | Credential |\n|------|------------|\n| AI Agent | OpenAI API |\n| MCP Client | AnySite Direct URL |\n\n---\n\n## Test It\n\nOpen the chat and try:\n\n```\nFind LinkedIn profile for Bill Gates\n```\n\n```\nSearch for posts about AI automation on Reddit\n```\n\n```\nGet company info for Anthropic\n```\n\n```\nFind Y Combinator startups in AI space\n```\n\n```\nGet SEC filings for Tesla\n```\n\n---\n\n## Available Tools (68 total)\n\n| Platform | Tools | What You Can Do |\n|----------|-------|-----------------|\n| LinkedIn | 27 | Profiles, companies, posts, employees, jobs, messaging |\n| Instagram | 8 | Profiles, posts, reels, comments, likes, followers |\n| Twitter/X | 5 | Profiles, tweets, user search, post search |\n| Y Combinator | 3 | Companies, founders, startup search |\n| YouTube | 3 | Video search, video details, subtitles |\n| Reddit | 3 | Posts, comments, subreddit search |\n| SEC | 2 | Company filings, document retrieval |\n| Web Parser | 2 | Webpage parsing, sitemap extraction |\n| Web Search | 1 | DuckDuckGo search |\n\n---\n\n## Support\n\n- 📧 support@anysite.io\n- 📚 [docs.anysite.io](https://docs.anysite.io)",
+        "height": 2096,
+        "width": 480
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -672,
+        -432
+      ],
+      "typeVersion": 1,
+      "id": "66ecbfe1-4c61-445b-a45d-72ac6001d343",
+      "name": "Sticky Note"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "3ff1ef12-9502-4024-926f-45a3db93dfe7",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "9bce59fa408e249dab636faffc5a13e5aa1a2e4af3383a551051e8bd22b2a1b9"
+  },
+  "id": "kPuG5pvxoYzbvT9q",
+  "tags": []
+}
