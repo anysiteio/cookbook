@@ -28,6 +28,16 @@ Universal VC investor analysis and outreach agent for founders.
 
 ## Installation
 
+**Option 1: Download packaged skill**
+```bash
+# Download the .skill file
+curl -LO https://github.com/anysiteio/cookbook/raw/main/claude-skills/vc-analyst.skill
+
+# Install (unzip to your skills folder)
+unzip vc-analyst.skill -d ~/.claude/skills/
+```
+
+**Option 2: Clone and copy**
 ```bash
 # Clone this repo
 git clone https://github.com/anysiteio/cookbook.git
