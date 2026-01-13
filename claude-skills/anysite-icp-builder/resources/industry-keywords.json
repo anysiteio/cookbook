@@ -1,0 +1,150 @@
+{
+  "industries": {
+    "saas": {
+      "keywords": ["software", "saas", "cloud", "platform", "api", "subscription"],
+      "adjacent": ["technology", "software development", "information technology"]
+    },
+    "fintech": {
+      "keywords": ["finance", "fintech", "banking", "payments", "financial services", "insurtech"],
+      "adjacent": ["financial technology", "digital banking", "neobank"]
+    },
+    "healthtech": {
+      "keywords": ["health", "healthcare", "medical", "biotech", "pharma", "digital health"],
+      "adjacent": ["telemedicine", "medtech", "life sciences"]
+    },
+    "ecommerce": {
+      "keywords": ["ecommerce", "e-commerce", "retail", "marketplace", "dtc", "d2c"],
+      "adjacent": ["online retail", "consumer goods", "shopping"]
+    },
+    "ai_ml": {
+      "keywords": ["artificial intelligence", "machine learning", "ai", "ml", "deep learning", "llm"],
+      "adjacent": ["data science", "analytics", "automation"]
+    },
+    "cybersecurity": {
+      "keywords": ["security", "cybersecurity", "infosec", "cyber", "identity"],
+      "adjacent": ["information security", "network security", "compliance"]
+    },
+    "martech": {
+      "keywords": ["marketing", "martech", "advertising", "adtech", "growth"],
+      "adjacent": ["digital marketing", "marketing technology", "automation"]
+    },
+    "hr_tech": {
+      "keywords": ["hr", "human resources", "recruiting", "talent", "workforce"],
+      "adjacent": ["people operations", "hris", "talent acquisition"]
+    },
+    "devtools": {
+      "keywords": ["developer", "devtools", "developer tools", "infrastructure", "devops"],
+      "adjacent": ["software development", "engineering", "platform"]
+    },
+    "data_infrastructure": {
+      "keywords": ["data", "analytics", "data infrastructure", "database", "etl"],
+      "adjacent": ["big data", "data warehouse", "business intelligence"]
+    },
+    "logistics": {
+      "keywords": ["logistics", "supply chain", "shipping", "fulfillment", "warehousing"],
+      "adjacent": ["transportation", "delivery", "operations"]
+    },
+    "proptech": {
+      "keywords": ["proptech", "real estate", "property", "construction", "contech"],
+      "adjacent": ["property technology", "realestate", "commercial real estate"]
+    },
+    "edtech": {
+      "keywords": ["education", "edtech", "learning", "training", "e-learning"],
+      "adjacent": ["educational technology", "online learning", "lms"]
+    },
+    "cleantech": {
+      "keywords": ["cleantech", "climate", "sustainability", "renewable", "green"],
+      "adjacent": ["clean energy", "environmental", "carbon"]
+    }
+  },
+  "company_sizes": {
+    "startup": {
+      "range": [1, 50],
+      "labels": ["startup", "early-stage", "seed", "pre-seed"]
+    },
+    "small": {
+      "range": [51, 200],
+      "labels": ["small business", "smb", "growing"]
+    },
+    "medium": {
+      "range": [201, 1000],
+      "labels": ["mid-market", "medium", "scale-up"]
+    },
+    "large": {
+      "range": [1001, 5000],
+      "labels": ["large", "enterprise", "corporate"]
+    },
+    "enterprise": {
+      "range": [5001, null],
+      "labels": ["enterprise", "fortune 500", "global"]
+    }
+  },
+  "seniority_levels": {
+    "c_level": {
+      "keywords": ["ceo", "cto", "cfo", "coo", "cmo", "cpo", "cro", "chief", "founder", "co-founder"],
+      "weight": 1.0
+    },
+    "vp": {
+      "keywords": ["vp", "vice president", "svp", "evp", "senior vice president"],
+      "weight": 0.9
+    },
+    "director": {
+      "keywords": ["director", "head of", "lead", "principal"],
+      "weight": 0.8
+    },
+    "manager": {
+      "keywords": ["manager", "team lead", "supervisor", "senior manager"],
+      "weight": 0.6
+    },
+    "individual": {
+      "keywords": ["engineer", "analyst", "specialist", "consultant", "coordinator"],
+      "weight": 0.3
+    }
+  },
+  "functions": {
+    "engineering": {
+      "keywords": ["engineer", "engineering", "developer", "development", "technical", "software", "platform"],
+      "titles": ["cto", "vp engineering", "head of engineering", "software engineer", "tech lead"]
+    },
+    "product": {
+      "keywords": ["product", "pm", "product management", "ux", "design"],
+      "titles": ["cpo", "vp product", "head of product", "product manager", "product director"]
+    },
+    "sales": {
+      "keywords": ["sales", "revenue", "account", "business development", "commercial"],
+      "titles": ["cro", "vp sales", "head of sales", "account executive", "sales director"]
+    },
+    "marketing": {
+      "keywords": ["marketing", "growth", "demand gen", "brand", "content"],
+      "titles": ["cmo", "vp marketing", "head of marketing", "marketing director", "growth lead"]
+    },
+    "data": {
+      "keywords": ["data", "analytics", "intelligence", "insights", "ml"],
+      "titles": ["chief data officer", "vp data", "head of data", "data scientist", "data engineer"]
+    },
+    "operations": {
+      "keywords": ["operations", "ops", "strategy", "transformation"],
+      "titles": ["coo", "vp operations", "head of operations", "operations manager"]
+    },
+    "finance": {
+      "keywords": ["finance", "accounting", "controller", "treasury"],
+      "titles": ["cfo", "vp finance", "head of finance", "controller", "finance director"]
+    },
+    "hr": {
+      "keywords": ["hr", "people", "talent", "human resources", "recruiting"],
+      "titles": ["chro", "vp people", "head of hr", "talent acquisition", "hr director"]
+    }
+  },
+  "buying_signals": {
+    "growth": ["hiring", "expanding", "scaling", "growing", "opening new"],
+    "funding": ["raised", "series", "funding", "investment", "backed by"],
+    "technology": ["implementing", "migrating", "adopting", "upgrading", "evaluating"],
+    "pain": ["struggling", "challenge", "problem", "issue", "need help"]
+  },
+  "regions": {
+    "north_america": ["united states", "usa", "us", "canada", "mexico", "north america"],
+    "europe": ["europe", "uk", "united kingdom", "germany", "france", "netherlands", "eu", "emea"],
+    "apac": ["asia", "apac", "australia", "singapore", "japan", "india", "asia pacific"],
+    "latam": ["latin america", "brazil", "argentina", "mexico", "latam"]
+  }
+}

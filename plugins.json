@@ -36,6 +36,14 @@
       "path": "claude-skills/universal-search",
       "type": "skill",
       "keywords": ["search", "web", "scraping", "data", "anysite"]
+    },
+    "anysite-icp-builder": {
+      "name": "AnySite ICP Builder",
+      "description": "Build and refine Ideal Customer Profiles (ICP) using real LinkedIn data via AnySite MCP. Analyzes existing customers, identifies patterns, generates scoring criteria, and finds lookalike prospects.",
+      "version": "1.0.0",
+      "path": "claude-skills/anysite-icp-builder",
+      "type": "skill",
+      "keywords": ["icp", "linkedin", "sales", "prospecting", "customer-profile", "anysite"]
     }
   }
 }
