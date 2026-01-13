@@ -1,0 +1,12 @@
+{
+  "name": "competitor-analyzer",
+  "version": "1.0.0",
+  "description": "Deep competitor analysis skill. Analyzes competitor websites, products, pricing, positioning, and market strategy using AnySite MCP.",
+  "author": "AnySite.io",
+  "type": "skill",
+  "keywords": ["competitor", "analysis", "market", "research", "strategy", "anysite"],
+  "triggers": ["analyze competitor", "competitor research", "competitive analysis", "/competitor-analyzer"],
+  "requirements": {
+    "mcp": ["anysite"]
+  }
+}

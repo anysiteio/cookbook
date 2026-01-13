@@ -1,0 +1,12 @@
+{
+  "name": "person-analyzer",
+  "version": "1.0.0",
+  "description": "Professional profile analyzer. Fetches and analyzes LinkedIn profiles, identifies key insights, builds comprehensive person reports.",
+  "author": "AnySite.io",
+  "type": "skill",
+  "keywords": ["linkedin", "profile", "person", "research", "prospecting", "anysite"],
+  "triggers": ["analyze person", "linkedin profile", "person research", "/person-analyzer"],
+  "requirements": {
+    "mcp": ["anysite"]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "universal-search",
+  "version": "1.0.0",
+  "description": "Universal web search and data extraction skill. Search across multiple sources and extract structured data from any website.",
+  "author": "AnySite.io",
+  "type": "skill",
+  "keywords": ["search", "web", "scraping", "data", "extraction", "anysite"],
+  "triggers": ["universal search", "web search", "search and extract", "/universal-search"],
+  "requirements": {
+    "mcp": ["anysite"]
+  }
+}

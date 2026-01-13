@@ -1,0 +1,12 @@
+{
+  "name": "vc-analyst",
+  "version": "1.0.0",
+  "description": "Universal VC investor analysis and outreach agent. Analyzes startup projects, identifies ideal investor profiles, scores investors, detects portfolio conflicts, generates personalized outreach.",
+  "author": "AnySite.io",
+  "type": "skill",
+  "keywords": ["vc", "investors", "fundraising", "outreach", "startup", "anysite"],
+  "triggers": ["analyze investors", "find investors", "investor research", "fundraising help", "score investor", "/vc-analyst"],
+  "requirements": {
+    "mcp": ["anysite"]
+  }
+}

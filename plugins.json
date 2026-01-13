@@ -1,0 +1,41 @@
+{
+  "name": "anysite-skills",
+  "version": "1.0.0",
+  "description": "AnySite skills for Claude Code - agent-first infrastructure for the web",
+  "author": "AnySite.io",
+  "repository": "https://github.com/anysiteio/cookbook",
+  "plugins": {
+    "vc-analyst": {
+      "name": "VC Analyst",
+      "description": "Universal VC investor analysis and outreach agent. Analyzes startup projects, identifies ideal investor profiles, scores investors, detects portfolio conflicts, generates personalized outreach.",
+      "version": "1.0.0",
+      "path": "claude-skills/vc-analyst",
+      "type": "skill",
+      "keywords": ["vc", "investors", "fundraising", "outreach", "startup", "anysite"]
+    },
+    "competitor-analyzer": {
+      "name": "Competitor Analyzer",
+      "description": "Deep competitor analysis skill. Analyzes competitor websites, products, pricing, positioning, and market strategy using AnySite MCP.",
+      "version": "1.0.0",
+      "path": "claude-skills/competitor-analyzer",
+      "type": "skill",
+      "keywords": ["competitor", "analysis", "market", "research", "anysite"]
+    },
+    "person-analyzer": {
+      "name": "Person Analyzer",
+      "description": "Professional profile analyzer. Fetches and analyzes LinkedIn profiles, identifies key insights, builds comprehensive person reports.",
+      "version": "1.0.0",
+      "path": "claude-skills/person-analyzer",
+      "type": "skill",
+      "keywords": ["linkedin", "profile", "person", "research", "anysite"]
+    },
+    "universal-search": {
+      "name": "Universal Search",
+      "description": "Universal web search and data extraction skill. Search across multiple sources and extract structured data from any website.",
+      "version": "1.0.0",
+      "path": "claude-skills/universal-search",
+      "type": "skill",
+      "keywords": ["search", "web", "scraping", "data", "anysite"]
+    }
+  }
+}
