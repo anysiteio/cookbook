@@ -1,0 +1,29 @@
+{
+  "name": "anysite-skills",
+  "owner": {
+    "name": "AnySite",
+    "email": "team@anysite.io"
+  },
+  "metadata": {
+    "description": "AnySite skills for Claude Code - LinkedIn data analysis, ICP building, and prospect research",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "anysite-icp-builder",
+      "source": "./claude-skills/anysite-icp-builder",
+      "description": "Build Ideal Customer Profiles from LinkedIn data via AnySite MCP",
+      "version": "1.0.0",
+      "author": {
+        "name": "AnySite",
+        "email": "team@anysite.io"
+      },
+      "homepage": "https://anysite.io",
+      "repository": "https://github.com/anysiteio/cookbook",
+      "license": "MIT",
+      "keywords": ["icp", "linkedin", "sales", "prospecting", "customer-profile", "b2b", "anysite", "mcp"],
+      "category": "sales",
+      "strict": true
+    }
+  ]
+}

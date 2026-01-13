@@ -1,0 +1,13 @@
+{
+  "name": "anysite-icp-builder",
+  "version": "1.0.0",
+  "description": "Build Ideal Customer Profiles from LinkedIn data via AnySite MCP",
+  "author": {
+    "name": "AnySite",
+    "email": "team@anysite.io"
+  },
+  "homepage": "https://anysite.io",
+  "repository": "https://github.com/anysiteio/cookbook",
+  "license": "MIT",
+  "keywords": ["icp", "linkedin", "sales", "prospecting", "anysite", "mcp"]
+}
