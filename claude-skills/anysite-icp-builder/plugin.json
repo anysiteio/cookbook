@@ -1,12 +1,45 @@
 {
   "name": "anysite-icp-builder",
   "version": "1.0.0",
-  "description": "Build and refine Ideal Customer Profiles (ICP) using real LinkedIn data via AnySite MCP. Analyzes existing customers, identifies patterns, generates scoring criteria, and finds lookalike prospects.",
-  "author": "AnySite.io",
+  "description": "Build Ideal Customer Profiles from LinkedIn data via AnySite MCP",
+  "author": "AnySite",
+  "license": "MIT",
   "type": "skill",
-  "keywords": ["icp", "linkedin", "sales", "prospecting", "customer-profile", "anysite"],
-  "triggers": ["build icp", "ideal customer profile", "customer analysis", "prospect research", "linkedin analysis", "target audience", "/anysite-icp-builder"],
-  "requirements": {
+  "homepage": "https://anysite.io",
+  "repository": "https://github.com/anysiteio/cookbook/tree/main/claude-skills/anysite-icp-builder",
+  "keywords": [
+    "icp",
+    "ideal-customer-profile",
+    "linkedin",
+    "sales",
+    "prospecting",
+    "customer-profile",
+    "b2b",
+    "anysite",
+    "mcp"
+  ],
+  "requires": {
     "mcp": ["anysite"]
+  },
+  "triggers": [
+    "icp",
+    "ideal customer profile",
+    "customer analysis",
+    "prospect research",
+    "linkedin analysis",
+    "target audience",
+    "customer profiling",
+    "build icp",
+    "analyze customers"
+  ],
+  "files": {
+    "skill": "SKILL.md",
+    "commands": ["commands/icp-build.md"],
+    "scripts": ["scripts/icp_analyzer.py"],
+    "templates": [
+      "templates/icp-report-template.md",
+      "templates/prospect-list-schema.json"
+    ],
+    "resources": ["resources/industry-keywords.json"]
   }
 }
